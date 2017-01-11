@@ -3,6 +3,14 @@
 Расширение для PHP для склонения имен. Использует vkext/flex из [KittenPHP](https://github.com/vk-com/kphp-kdb).
 Включена поддержка русского и украинского.
 
+### Установка
+```
+$ phpize
+$ ./configure
+$ make
+# make install
+```
+
 ### Использование
 
 `vkflex($name, $case, $sex, $lang, $type)`
