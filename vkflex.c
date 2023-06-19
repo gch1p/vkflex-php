@@ -48,7 +48,7 @@ PHP_FUNCTION(vkflex)
     long name_len, case_len;
     long sex, lang, type;
     
-    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "sslll", 
+    if (zend_parse_parameters(ZEND_NUM_ARGS(), "sslll",
             &name, &name_len, &case_, &case_len, &sex, &lang, &type) == FAILURE) {
         RETURN_NULL();
     }
