@@ -2,6 +2,7 @@
 #include "config.h"
 #endif
 #include "php.h"
+#include "vkflex_arginfo.h"
 #include "vkext_flex.h"
 #include <stdio.h>
  
@@ -17,7 +18,7 @@ PHP_FUNCTION(vkflex);
 // list of custom PHP functions provided by this extension
 // set {NULL, NULL, NULL} as the last record to mark the end of list
 static zend_function_entry my_functions[] = {
-    PHP_FE(vkflex, NULL)
+    PHP_FE(vkflex, arginfo_vkflex)
     {NULL, NULL, NULL}
 };
  
